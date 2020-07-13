@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bb0202f-6a52-4772-b100-b4b82cd4edf6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cascan.go" beforeDir="false" afterPath="$PROJECT_DIR$/cascan.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +73,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="moved from roleGetter to authorized reverse flow" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved from roleGetter to authorized reverse flow" />
+    <MESSAGE value="exposed authorizer for testing" />
+    <MESSAGE value="exposed Authorizer for testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="exposed Authorizer for testing" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -84,10 +86,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1594579321876" />
-    <state x="218" y="0" key="CommitChangelistDialog2" timestamp="1594639175498">
+    <state x="218" y="0" key="CommitChangelistDialog2" timestamp="1594639300186">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="218" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1594639175498" />
+    <state x="218" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1594639300186" />
     <state width="1398" height="226" key="GridCell.Tab.0.bottom" timestamp="1594579605663">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -108,9 +110,9 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1594566926849" />
-    <state x="320" y="186" key="Vcs.Push.Dialog.v2" timestamp="1594639240047">
+    <state x="320" y="186" key="Vcs.Push.Dialog.v2" timestamp="1594639323895">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="186" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1594639240047" />
+    <state x="320" y="186" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1594639323895" />
   </component>
 </project>
