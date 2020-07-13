@@ -35,9 +35,7 @@ func (a *Authorizer) Authorize() buffalo.MiddlewareFunc {
 	return func(next buffalo.Handler) buffalo.Handler {
 		return func(c buffalo.Context) error {
 
-			if a.userModel == nil {
-				a.userModel = c.Value("current_user").(userModel)
-			}
+			a.userModel = c.Value("current_user").(userModel)
 
 			if a.userModel.GetAuthorizer() == nil {
 				a.userModel.SetAuthorizer(a)
