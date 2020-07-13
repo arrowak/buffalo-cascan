@@ -12,17 +12,17 @@ import (
 )
 
 var (
-	a    *authorizer
+	a    *Authorizer
 	once sync.Once
 )
 
 type userModel interface {
-	GetAuthorizer() *authorizer
-	SetAuthorizer(a *authorizer)
+	GetAuthorizer() *Authorizer
+	SetAuthorizer(a *Authorizer)
 	GetRole() string
 }
 
-type authorizer struct {
+type Authorizer struct {
 	enforcer   *casbin.Enforcer
 	userModel  userModel
 	policyFile string
@@ -31,7 +31,7 @@ type authorizer struct {
 	mu sync.RWMutex
 }
 
-func (a *authorizer) Authorize() buffalo.MiddlewareFunc {
+func (a *Authorizer) Authorize() buffalo.MiddlewareFunc {
 	return func(next buffalo.Handler) buffalo.Handler {
 		return func(c buffalo.Context) error {
 
@@ -76,13 +76,13 @@ func (a *authorizer) Authorize() buffalo.MiddlewareFunc {
 	}
 }
 
-func NewAuthorizer(authModelFile string, policyFile string) *authorizer {
+func NewAuthorizer(authModelFile string, policyFile string) *Authorizer {
 	once.Do(func() {
 		authEnforcer, err := casbin.NewEnforcer(authModelFile, policyFile)
 		if err != nil {
 			log.Fatal(err)
 		}
-		a = &authorizer{
+		a = &Authorizer{
 			enforcer:   authEnforcer,
 			policyFile: policyFile,
 			authModel:  authModelFile,
@@ -91,7 +91,7 @@ func NewAuthorizer(authModelFile string, policyFile string) *authorizer {
 	return a
 }
 
-func (a *authorizer) IsAuthorizedFor(resourceName string, actionName string) bool {
+func (a *Authorizer) IsAuthorizedFor(resourceName string, actionName string) bool {
 	res, _ := a.enforcer.Enforce(a.userModel.GetRole(), resourceName, actionName)
 	return res
 }

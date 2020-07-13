@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bb0202f-6a52-4772-b100-b4b82cd4edf6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cascan.go" beforeDir="false" afterPath="$PROJECT_DIR$/cascan.go" afterDir="false" />
     </list>
@@ -20,6 +19,11 @@
   </component>
   <component name="GOROOT" path="/usr/local/Cellar/go/1.14.4/libexec" />
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Arun Kolhapur &lt;arunko350@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GoLibraries">
@@ -34,6 +38,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -66,6 +71,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="moved from roleGetter to authorized reverse flow" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved from roleGetter to authorized reverse flow" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
     <proxy>direct</proxy>
@@ -75,6 +84,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1594579321876" />
+    <state x="218" y="0" key="CommitChangelistDialog2" timestamp="1594639175498">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="218" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1594639175498" />
     <state width="1398" height="226" key="GridCell.Tab.0.bottom" timestamp="1594579605663">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -95,9 +108,9 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1594566926849" />
-    <state x="320" y="186" key="Vcs.Push.Dialog.v2" timestamp="1594580315493">
+    <state x="320" y="186" key="Vcs.Push.Dialog.v2" timestamp="1594639240047">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="186" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1594580315493" />
+    <state x="320" y="186" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1594639240047" />
   </component>
 </project>
