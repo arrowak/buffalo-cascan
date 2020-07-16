@@ -34,6 +34,9 @@ type Authorizer struct {
 func (a *Authorizer) Authorize() buffalo.MiddlewareFunc {
 	return func(next buffalo.Handler) buffalo.Handler {
 		return func(c buffalo.Context) error {
+			if c.Value("current_user") == nil {
+				return next(c)
+			}
 
 			a.userModel = c.Value("current_user").(userModel)
 
